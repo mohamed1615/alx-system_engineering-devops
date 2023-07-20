@@ -1,0 +1,2 @@
+#!/bin/bash
+cat [ -z "$1" ] | tr '''\n' | sort | uniq -u
