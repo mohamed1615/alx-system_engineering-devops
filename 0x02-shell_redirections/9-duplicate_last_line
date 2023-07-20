@@ -1,2 +1,2 @@
 #!/bin/bash
-tail -n 1 /tmp/h/iacta | tee -a /tmp/h/iacta
+tail -n 1 iacta >> iacta
