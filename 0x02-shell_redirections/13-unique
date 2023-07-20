@@ -1,2 +1,2 @@
 #!/bin/bash
-cat [ -z "$1" ] | tr '''\n' | sort | uniq -u
+if [ -p /dev/stdin ]; then read words; else words=$(cat "$1"); fi && echo "$words" | tr ' ' '\n' | sort | uniq -u
